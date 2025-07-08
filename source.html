@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Código Fuente - Framium Modpack</title>
+    <title>Source Code - Framium Modpack</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,16 +11,16 @@
         <div class="logo">Framium</div>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="docs.html">Documentación</a></li>
-                <li><a href="source.html">Código Fuente</a></li>
-                <li><a href="support.html">Soporte</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="docs.html">Documentation</a></li>
+                <li><a href="source.html">Source Code</a></li>
+                <li><a href="support.html">Support</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="source-code">
-        <h1>Estructura del Código Fuente</h1>
+        <h1>Source Code Structure</h1>
         
         <div class="file-structure">
             <div class="folder">
@@ -29,67 +29,67 @@
                     <div class="folder">
                         <span>📁 config/</span>
                         <div class="contents">
-                            <div class="file"><span>📄 c2me.toml</span> - Configuración para la carga optimizada de chunks</div>
-                            <div class="file"><span>📄 dynamicfps.json</span> - Ajustes para FPS dinámico cuando la ventana está inactiva</div>
-                            <div class="file"><span>📄 entityculling.properties</span> - Optimización de renderizado de entidades</div>
-                            <div class="file"><span>📄 ferritecore.properties</span> - Reducción de uso de memoria RAM</div>
-                            <div class="file"><span>📄 iris.properties</span> - Configuración de shaders (si se usan)</div>
-                            <div class="file"><span>📄 krypton.properties</span> - Optimización de red para multiplayer</div>
-                            <div class="file"><span>📄 lithium.properties</span> - Mejoras generales de rendimiento</div>
-                            <div class="file"><span>📄 sodium-options.json</span> - Ajustes avanzados de renderizado</div>
+                            <div class="file"><span>📄 c2me.toml</span> - Optimized chunk loading settings</div>
+                            <div class="file"><span>📄 dynamicfps.json</span> - Dynamic FPS settings when the window is inactive</div>
+                            <div class="file"><span>📄 entityculling.properties</span> - Entity rendering optimization</div>
+                            <div class="file"><span>📄 ferritecore.properties</span> - RAM usage reduction</div>
+                            <div class="file"><span>📄 iris.properties</span> - Shader configuration (if used)</div>
+                            <div class="file"><span>📄 krypton.properties</span> - Network optimization for multiplayer</div>
+                            <div class="file"><span>📄 lithium.properties</span> - General performance improvements</div>
+                            <div class="file"><span>📄 sodium-options.json</span> - Advanced rendering settings</div>
                         </div>
                     </div>
                     <div class="folder">
                         <span>📁 mods/</span>
                         <div class="contents">
-                            <div class="file"><span>📦 (archivos .jar)</span> - Todos los mods de optimización</div>
+                            <div class="file"><span>📦 (.jar files)</span> - All optimization mods</div>
                         </div>
                     </div>
-                    <div class="file"><span>📄 modlist.json</span> - Lista completa de mods con versiones</div>
-                    <div class="file"><span>🖼️ icon.png</span> - Icono del modpack</div>
+                    <div class="file"><span>📄 modlist.json</span> - Full list of mods with versions</div>
+                    <div class="file"><span>🖼️ icon.png</span> - Modpack icon</div>
                 </div>
             </div>
         </div>
 
         <section class="file-descriptions">
-            <h2>Función de cada archivo</h2>
+            <h2>Purpose of Each File</h2>
             
             <div class="description-grid">
                 <div class="description-card">
                     <h3>c2me.toml</h3>
-                    <p>Controla la carga paralela de chunks para mejorar el rendimiento en mundos grandes.</p>
+                    <p>Controls parallel chunk loading to improve performance in large worlds.</p>
                 </div>
                 
                 <div class="description-card">
                     <h3>entityculling.properties</h3>
-                    <p>Evita renderizar entidades que no son visibles, reduciendo el uso de GPU.</p>
+                    <p>Skips rendering of invisible entities, reducing GPU usage.</p>
                 </div>
                 
                 <div class="description-card">
                     <h3>ferritecore.properties</h3>
-                    <p>Optimiza el uso de memoria reduciendo datos redundantes.</p>
+                    <p>Optimizes memory by reducing redundant data.</p>
                 </div>
                 
                 <div class="description-card">
                     <h3>krypton.properties</h3>
-                    <p>Mejora la conexión en multiplayer comprimiendo paquetes de red.</p>
+                    <p>Improves multiplayer connection by compressing network packets.</p>
                 </div>
                 
                 <div class="description-card">
                     <h3>lithium.properties</h3>
-                    <p>Acelera cálculos del juego (física, IA, etc.) para mejor FPS.</p>
+                    <p>Speeds up game calculations (physics, AI, etc.) for better FPS.</p>
                 </div>
                 
                 <div class="description-card">
                     <h3>sodium-options.json</h3>
-                    <p>Configuración avanzada del renderizador gráfico.</p>
+                    <p>Advanced configuration for the graphics renderer.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 Framium Modpack. Todos los derechos reservados.</p>
+        <p>© 2025 Framium Modpack. All rights reserved.</p>
     </footer>
 </body>
 </html>
