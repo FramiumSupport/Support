@@ -20,41 +20,71 @@
     </header>
 
     <main class="source-code">
-        <h1>Código Fuente</h1>
+        <h1>Estructura del Código Fuente</h1>
         
-        <section>
-            <h2>Repositorio del Proyecto</h2>
-            <p>El código fuente de Framium Modpack está disponible en GitHub:</p>
-            
-            <div class="github-card">
-                <a href="https://github.com/tuusuario/framium-modpack" class="github-link" target="_blank">
-                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="github-logo">
-                    <span>Ver en GitHub</span>
-                </a>
-                
-                <div class="repo-info">
-                    <h3>framium-modpack</h3>
-                    <p>Una colección de mods cuidadosamente seleccionados para optimizar Minecraft</p>
-                    
-                    <div class="repo-stats">
-                        <span>⭐ +337.29% DE FPS</span>
-                        <span>🔄 Reduccion del Lag del 95%</span>
+        <div class="file-structure">
+            <div class="folder">
+                <span>📁 FRAMIUM/</span>
+                <div class="contents">
+                    <div class="folder">
+                        <span>📁 config/</span>
+                        <div class="contents">
+                            <div class="file"><span>📄 c2me.toml</span> - Configuración para la carga optimizada de chunks</div>
+                            <div class="file"><span>📄 dynamicfps.json</span> - Ajustes para FPS dinámico cuando la ventana está inactiva</div>
+                            <div class="file"><span>📄 entityculling.properties</span> - Optimización de renderizado de entidades</div>
+                            <div class="file"><span>📄 ferritecore.properties</span> - Reducción de uso de memoria RAM</div>
+                            <div class="file"><span>📄 iris.properties</span> - Configuración de shaders (si se usan)</div>
+                            <div class="file"><span>📄 krypton.properties</span> - Optimización de red para multiplayer</div>
+                            <div class="file"><span>📄 lithium.properties</span> - Mejoras generales de rendimiento</div>
+                            <div class="file"><span>📄 sodium-options.json</span> - Ajustes avanzados de renderizado</div>
+                        </div>
                     </div>
+                    <div class="folder">
+                        <span>📁 mods/</span>
+                        <div class="contents">
+                            <div class="file"><span>📦 (archivos .jar)</span> - Todos los mods de optimización</div>
+                        </div>
+                    </div>
+                    <div class="file"><span>📄 modlist.json</span> - Lista completa de mods con versiones</div>
+                    <div class="file"><span>🖼️ icon.png</span> - Icono del modpack</div>
                 </div>
             </div>
-        </section>
-        
-        <section>
-            <h2>Contribuir</h2>
-            <p>¡Agradecemos las contribuciones! Si deseas contribuir al proyecto:</p>
+        </div>
+
+        <section class="file-descriptions">
+            <h2>Función de cada archivo</h2>
             
-            <ol>
-                <li>Haz un fork del repositorio</li>
-                <li>Crea una rama para tu feature (<code>git checkout -b feature/awesome-feature</code>)</li>
-                <li>Haz commit de tus cambios (<code>git commit -am 'Add awesome feature'</code>)</li>
-                <li>Push a la rama (<code>git push origin feature/awesome-feature</code>)</li>
-                <li>Abre un Pull Request</li>
-            </ol>
+            <div class="description-grid">
+                <div class="description-card">
+                    <h3>c2me.toml</h3>
+                    <p>Controla la carga paralela de chunks para mejorar el rendimiento en mundos grandes.</p>
+                </div>
+                
+                <div class="description-card">
+                    <h3>entityculling.properties</h3>
+                    <p>Evita renderizar entidades que no son visibles, reduciendo el uso de GPU.</p>
+                </div>
+                
+                <div class="description-card">
+                    <h3>ferritecore.properties</h3>
+                    <p>Optimiza el uso de memoria reduciendo datos redundantes.</p>
+                </div>
+                
+                <div class="description-card">
+                    <h3>krypton.properties</h3>
+                    <p>Mejora la conexión en multiplayer comprimiendo paquetes de red.</p>
+                </div>
+                
+                <div class="description-card">
+                    <h3>lithium.properties</h3>
+                    <p>Acelera cálculos del juego (física, IA, etc.) para mejor FPS.</p>
+                </div>
+                
+                <div class="description-card">
+                    <h3>sodium-options.json</h3>
+                    <p>Configuración avanzada del renderizador gráfico.</p>
+                </div>
+            </div>
         </section>
     </main>
 
