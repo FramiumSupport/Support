@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - Framium Modpack</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("L84z4-DYilyyytkNR");
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Framium</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="docs.html">Documentación</a></li>
+                <li><a href="source.html">Código Fuente</a></li>
+                <li><a href="support.html">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="support">
+        <h1>Soporte & Sugerencias</h1>
+        
+        <form id="support-form">
+            <div class="form-group">
+                <label for="request-type">Tipo de solicitud:</label>
+                <select id="request-type" name="request-type" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="support">Soporte Técnico</option>
+                    <option value="suggestion">Sugerencia</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastname">Apellido (opcional):</label>
+                <input type="text" id="lastname" name="lastname">
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Descripción:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+        
+        <div id="success-message" class="hidden">
+            <h3>¡Gracias por contactarnos!</h3>
+            <p>Hemos recibido tu mensaje y te responderemos pronto.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Framium Modpack. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
