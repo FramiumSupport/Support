@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         supportForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Obtener los valores del formulario
+            // Get form values
             const requestType = document.getElementById('request-type').value;
             const email = document.getElementById('email').value;
             const name = document.getElementById('name').value;
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
             
-            // Enviar el correo con EmailJS
+            // Send email with EmailJS
             emailjs.send('service_s2d8cbw', 'template_rey70h8', {
                 request_type: requestType,
                 from_email: email,
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 successMessage.classList.remove('hidden');
             }, function(error) {
                 console.log('FAILED...', error);
-                alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.');
+                alert('There was an error sending your message. Please try again later.');
             });
         });
     }
