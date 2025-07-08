@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soporte - Framium Modpack</title>
+    <title>Support - Framium Modpack</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
     <script>
@@ -17,63 +17,63 @@
         <div class="logo">Framium</div>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="docs.html">Documentación</a></li>
-                <li><a href="source.html">Código Fuente</a></li>
-                <li><a href="support.html">Soporte</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="docs.html">Documentation</a></li>
+                <li><a href="source.html">Source Code</a></li>
+                <li><a href="support.html">Support</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="support">
-        <h1>Soporte & Sugerencias</h1>
+        <h1>Support & Suggestions</h1>
         
         <form id="support-form">
             <div class="form-group">
-                <label for="request-type">Tipo de solicitud:</label>
+                <label for="request-type">Request Type:</label>
                 <select id="request-type" name="request-type" required>
-                    <option value="" disabled selected>Selecciona una opción</option>
-                    <option value="support">Soporte Técnico</option>
-                    <option value="suggestion">Sugerencia</option>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="support">Technical Support</option>
+                    <option value="suggestion">Suggestion</option>
                 </select>
             </div>
             
             <div class="form-group">
-                <label for="email">Correo electrónico:</label>
+                <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
             </div>
             
             <div class="form-group">
-                <label for="name">Nombre:</label>
+                <label for="name">First Name:</label>
                 <input type="text" id="name" name="name" required>
             </div>
             
             <div class="form-group">
-                <label for="lastname">Apellido (opcional):</label>
+                <label for="lastname">Last Name (optional):</label>
                 <input type="text" id="lastname" name="lastname">
             </div>
             
             <div class="form-group">
-                <label for="subject">Asunto:</label>
+                <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required>
             </div>
             
             <div class="form-group">
-                <label for="message">Descripción:</label>
+                <label for="message">Description:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
             
-            <button type="submit" class="submit-btn">Enviar</button>
+            <button type="submit" class="submit-btn">Send</button>
         </form>
         
         <div id="success-message" class="hidden">
-            <h3>¡Gracias por contactarnos!</h3>
-            <p>Hemos recibido tu mensaje y te responderemos pronto.</p>
+            <h3>Thank you for contacting us!</h3>
+            <p>We have received your message and will get back to you soon.</p>
         </div>
     </main>
 
     <footer>
-        <p>© 2025 Framium Modpack. Todos los derechos reservados.</p>
+        <p>© 2025 Framium Modpack. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
